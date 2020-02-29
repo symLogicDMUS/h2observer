@@ -8,6 +8,7 @@ from get_contam_dicts1 import  get_contam_dicts
 from get_util_name1 import  get_util_name
 from get_util_details1 import  get_util_details
 import json
+import os
 
 if __name__ == "__main__":
     util_data = {}
@@ -31,7 +32,7 @@ if __name__ == "__main__":
         util_data[util_name]['contamination_data'] = contam_data
         util_data[util_name]['utility_details'] = util_details
     pprint(util_data)
-    with open('C:/Users/bjrat/source/h2observer/source/venv/utilities.json', 'w') as json_file:
+    with open('./utilities.json', 'w') as json_file:
         json.dump(util_data, json_file)
     json_file.close()
 
