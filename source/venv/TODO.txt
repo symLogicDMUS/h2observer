@@ -1,0 +1,7 @@
+1. use Flask?
+2. get the big numbers (how far over the legal limit) for each chemical, and the name of the chemical
+3. words to look for in HTML:
+   contaminant-name
+   potentital-effect
+4. first task is to get just the info we want
+5. check for results that return none, and print 'no result'
